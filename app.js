@@ -37,7 +37,7 @@ decimal.addEventListener("keyup", function (event) {
 octal.addEventListener("keyup", function (event) {
     if (event.key === 'Enter') {
         event.preventDefault();
-        hexa.value = parseInt(parseInt(octal.value, '8')).toString(16);
+        hexa.value = parseInt(parseInt(octal.value, '8')).toString(16).toUpperCase();
         decimal.value = parseInt(octal.value, '8')
         binary.value = parseInt(parseInt(octal.value, '8')).toString(2)
     }
