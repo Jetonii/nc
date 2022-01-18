@@ -24,7 +24,7 @@ body {
 
 
 input {
-    width: 300px;
+    width: 270px;
     height: 70px;
     border-radius: 50px;
     font-size: 2em;
@@ -43,4 +43,3 @@ label {
     font-weight: 700;
     width: 400px
 }
-
