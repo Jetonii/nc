@@ -5,6 +5,16 @@ form {
     border-radius: 15px;
 }
 
+button {
+    display:inline;
+    width: 140px;
+    height: 40px;
+    background-color: rgb(28, 118, 148);
+    color: black;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
 form:hover{
     background-color: rgb(107, 104, 104);
 }
