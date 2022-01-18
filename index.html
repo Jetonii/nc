@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,39 @@
     <title>Number Converter</title>
     <link rel="stylesheet" href="app.css">
 </head>
+
 <body>
     <center>
         <h1 style='color: rgb(174, 174, 221)'>Number Converter</h1>
         <h2 id='result'></h2>
-    <form action="">
         <br>
-        <label for="hexa">Type Hexadecimal Number<sub>(16)</sub></label>
-        <input type="text" id='hexa' placeholder="Hexa" value=''>
-        <br>
-        <hr>
-        <label for="binary">Type Binary Number <sub>(2)</sub></label>
-        <input type="text" id='binary' placeholder="Binary" value=''>
-        <br>
-        <hr>
-        <label for="decimal">Type Decimal Number <sub>(10)</sub></label>
-        <input type="text" id='decimal' placeholder="Decimal" value=''>
-        <br>
-        <hr>    
-        <label for="octal">Type Octal Number <sub>(8)</sub></label>
-        <input type="text" id='octal' placeholder="Octal" value=''>
-    </form>
+        <form action="">
+            <br>
+            <label for="hexa">Type Hexadecimal Number<sub>(16)</sub></label>
+            <input type="text" id='hexa' placeholder="Hexa" value=''>
+            <button type='button' id='hexaSubmit'>Convert</button>
+            <br>
+            <hr>
+            <label for="binary">Type Binary Number <sub>(2)</sub></label>
+            <input type="text" id='binary' placeholder="Binary" value=''>
+            <button type='button' id='binarySubmit'>Convert</button>
+
+            <br>
+            <hr>
+            <label for="decimal">Type Decimal Number <sub>(10)</sub></label>
+            <input type="text" id='decimal' placeholder="Decimal" value=''>
+            <button type='button' id='decimalSubmit'>Convert</button>
+
+            <br>
+            <hr>
+            <label for="octal">Type Octal Number <sub>(8)</sub></label>
+            <input type="text" id='octal' placeholder="Octal" value=''>
+            <button type='button' id='octalSubmit'>Convert</button>
+
+        </form>
+
     </center>
     <script src="app.js"></script>
 </body>
+
 </html>
