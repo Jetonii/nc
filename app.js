@@ -4,9 +4,8 @@ const result = document.getElementById('result')
 const decimal = document.getElementById('decimal')
 const octal = document.getElementById('octal')
 
-
-binary.addEventListener("keyup", function (event) {
-    if (event.key === 'Enter') {
+binary.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter' && event.keycode === 13) {
         event.preventDefault();
         hexa.value = parseInt(binary.value, 2).toString(16).toUpperCase()
         decimal.value = parseInt(binary.value, 2)
@@ -14,9 +13,8 @@ binary.addEventListener("keyup", function (event) {
     }
 });
 
-
-hexa.addEventListener("keyup", function (event) {
-    if (event.key === 'Enter') {
+hexa.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter' && event.keycode === 13) {
         event.preventDefault();
         decimal.value = parseInt(hexa.value, 16)
         binary.value = (parseInt(hexa.value, 16).toString(2)).padStart(9, '0');
@@ -24,8 +22,8 @@ hexa.addEventListener("keyup", function (event) {
     }
 });
 
-decimal.addEventListener("keyup", function (event) {
-    if (event.key === 'Enter') {
+decimal.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter' && event.keycode === 13) {
         event.preventDefault();
         hexa.value = parseInt(decimal.value).toString(16).toUpperCase();
         binary.value = parseInt(decimal.value).toString(2)
@@ -33,9 +31,8 @@ decimal.addEventListener("keyup", function (event) {
     }
 });
 
-
-octal.addEventListener("keyup", function (event) {
-    if (event.key === 'Enter') {
+octal.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter' && event.keycode === 13) {
         event.preventDefault();
         hexa.value = parseInt(parseInt(octal.value, '8')).toString(16).toUpperCase();
         decimal.value = parseInt(octal.value, '8')
